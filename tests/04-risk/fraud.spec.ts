@@ -52,7 +52,7 @@ test.describe('Admin Module: Fraud Alerts (Risk)', () => {
 
     // Filter by High severity
     await fraudPage.severitySelect.selectOption({ label: 'High severity' });
-    await page.waitForTimeout(400);
+    await expect(fraudPage.tableRows.first()).toBeVisible({ timeout: 10000 });
     const highCount = await fraudPage.tableRows.count();
     expect(highCount).toBe(3);
     const highBadges = await page.locator('tbody tr').getByText(/high/i).count();
@@ -60,13 +60,13 @@ test.describe('Admin Module: Fraud Alerts (Risk)', () => {
 
     // Filter by Medium severity
     await fraudPage.severitySelect.selectOption({ label: 'Medium severity' });
-    await page.waitForTimeout(400);
+    await expect(fraudPage.tableRows.first()).toBeVisible({ timeout: 10000 });
     const medCount = await fraudPage.tableRows.count();
     expect(medCount).toBe(1);
 
     // Reset to All severities
     await fraudPage.severitySelect.selectOption({ label: 'All severities' });
-    await page.waitForTimeout(400);
+    await expect(fraudPage.tableRows.first()).toBeVisible({ timeout: 10000 });
     const allCount = await fraudPage.tableRows.count();
     expect(allCount).toBe(4);
   });

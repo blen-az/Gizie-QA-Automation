@@ -76,7 +76,7 @@ test.describe('Admin Module: Businesses (Operations)', () => {
     const specialInputs = ["'", "\"", "%", "--", "\\"];
     for (const input of specialInputs) {
       await bizPage.search(input);
-      await page.waitForTimeout(300);
+      await expect(bizPage.table.or(page.getByText('No businesses in this filter'))).toBeVisible({ timeout: 10000 });
 
       await expect(bizPage.heading).toBeVisible();
       const hasTable = await bizPage.table.isVisible();

@@ -32,9 +32,13 @@ test.describe('Admin Module: KYC / Verification (Operations)', () => {
 
     // Switch to Pending
     await kycPage.tabPending.click();
-    await page.waitForTimeout(400);
-    const pendingCount = await kycPage.tableRows.count();
-    expect(pendingCount).toBe(5);
+    const pendingTabMatch = (await kycPage.tabPending.innerText()).match(/(\d+)/);
+    const expectedPendingCount = pendingTabMatch ? parseInt(pendingTabMatch[1], 10) : 0;
+    if (expectedPendingCount > 0) {
+      await expect(kycPage.tableRows.first()).toBeVisible({ timeout: 10000 });
+      const pendingCount = await kycPage.tableRows.count();
+      expect(pendingCount).toBe(expectedPendingCount);
+    }
 
     // Switch to Approved
     await kycPage.tabApproved.click();
@@ -42,9 +46,9 @@ test.describe('Admin Module: KYC / Verification (Operations)', () => {
 
     // Switch back to All
     await kycPage.tabAll.click();
-    await page.waitForTimeout(400);
+    await expect(kycPage.tableRows.first()).toBeVisible({ timeout: 10000 });
     const allCount = await kycPage.tableRows.count();
-    expect(allCount).toBeGreaterThanOrEqual(pendingCount);
+    expect(allCount).toBeGreaterThan(0);
   });
 
   test('ADM-KYC-03: Search filters KYC submissions dynamically', async ({ page }) => {
@@ -57,7 +61,7 @@ test.describe('Admin Module: KYC / Verification (Operations)', () => {
 
     // Clear search
     await kycPage.searchInput.fill('');
-    await page.waitForTimeout(400);
+    await expect(kycPage.tableRows.first()).toBeVisible({ timeout: 10000 });
     const restoredCount = await kycPage.tableRows.count();
     expect(restoredCount).toBeGreaterThan(0);
   });

@@ -1,0 +1,541 @@
+[
+  {
+    "reqId": "AUTH-FN-01",
+    "module": "Authentication",
+    "cat": "Functional",
+    "specField": "`ADM-AUTH-01` (`tests/01-auth/auth.spec.ts:5`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "AUTH-NEG-01",
+    "module": "Authentication",
+    "cat": "Negative",
+    "specField": "`ADM-AUTH-02` (`tests/01-auth/auth.spec.ts:18`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "AUTH-NEG-02",
+    "module": "Authentication",
+    "cat": "Negative / Boundary",
+    "specField": "`ADM-AUTH-03` (`tests/01-auth/auth.spec.ts:36`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "AUTH-FN-02",
+    "module": "Authentication",
+    "cat": "Functional",
+    "specField": "`ADM-AUTH-04` (`tests/01-auth/auth.spec.ts:48`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "AUTH-SEC-01",
+    "module": "Authentication",
+    "cat": "Security",
+    "specField": "`ADM-AUTH-05` (`tests/01-auth/auth.spec.ts:69`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "AUTH-SEC-02",
+    "module": "Authentication",
+    "cat": "Security / Session",
+    "specField": "`SEC-01` (`tests/07-security/security-and-auth.spec.ts:4`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "AUTH-SEC-03",
+    "module": "Authentication",
+    "cat": "Security",
+    "specField": "`SEC-02` (`tests/07-security/security-and-auth.spec.ts:18`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "AUTH-SEC-04",
+    "module": "Authentication",
+    "cat": "Security / UI",
+    "specField": "`SEC-03` (`tests/07-security/security-and-auth.spec.ts:43`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "AUTH-SEC-05",
+    "module": "Authentication",
+    "cat": "Security / XSS",
+    "specField": "`SEC-04` (`tests/07-security/security-and-auth.spec.ts:68`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "DASH-FN-01",
+    "module": "Overview",
+    "cat": "Functional",
+    "specField": "`ADM-DASH-01` (`tests/02-overview/dashboard.spec.ts:5`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "DASH-FN-02",
+    "module": "Overview",
+    "cat": "Functional",
+    "specField": "`ADM-DASH-02` (`tests/02-overview/dashboard.spec.ts:14`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "DASH-FN-03",
+    "module": "Overview",
+    "cat": "Functional",
+    "specField": "`ADM-DASH-03` (`tests/02-overview/dashboard.spec.ts:26`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "DASH-FN-04",
+    "module": "Overview",
+    "cat": "Functional",
+    "specField": "`ADM-DASH-04` (`tests/02-overview/dashboard.spec.ts:42`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "DASH-FN-05",
+    "module": "Overview",
+    "cat": "Functional",
+    "specField": "`ADM-DASH-05` (`tests/02-overview/dashboard.spec.ts:56`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "DEL-FN-01",
+    "module": "Operations",
+    "cat": "Functional",
+    "specField": "`ADM-DEL-01` (`tests/03-operations/account-deletions.spec.ts:4`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "DEL-WF-01",
+    "module": "Operations",
+    "cat": "Workflow / Mutation",
+    "specField": "*Blocked*",
+    "status": "Blocked ⚠️"
+  },
+  {
+    "reqId": "BKG-FN-01",
+    "module": "Operations",
+    "cat": "Functional",
+    "specField": "`ADM-BKG-01` (`tests/03-operations/bookings.spec.ts:5`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "BKG-FN-02",
+    "module": "Operations",
+    "cat": "Functional",
+    "specField": "`ADM-BKG-02` (`tests/03-operations/bookings.spec.ts:27`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "BKG-FN-03",
+    "module": "Operations",
+    "cat": "Functional / Search",
+    "specField": "`ADM-BKG-03` (`tests/03-operations/bookings.spec.ts:47`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "BKG-FN-04",
+    "module": "Operations",
+    "cat": "Functional / Boundary",
+    "specField": "`ADM-BKG-04` (`tests/03-operations/bookings.spec.ts:64`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "BKG-WF-01",
+    "module": "Operations",
+    "cat": "Workflow / Mutation",
+    "specField": "*Blocked*",
+    "status": "Blocked ⚠️"
+  },
+  {
+    "reqId": "BKYC-FN-01",
+    "module": "Operations",
+    "cat": "Functional",
+    "specField": "`ADM-BKYC-01` (`tests/03-operations/branch-kyc.spec.ts:4`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "BKYC-FN-02",
+    "module": "Operations",
+    "cat": "Functional",
+    "specField": "`ADM-BKYC-02` (`tests/03-operations/branch-kyc.spec.ts:25`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "BIZ-FN-01",
+    "module": "Operations",
+    "cat": "Functional",
+    "specField": "`ADM-BIZ-01` (`tests/03-operations/businesses.spec.ts:5`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "BIZ-FN-02",
+    "module": "Operations",
+    "cat": "Functional",
+    "specField": "`ADM-BIZ-02` (`tests/03-operations/businesses.spec.ts:26`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "BIZ-FN-03",
+    "module": "Operations",
+    "cat": "Functional / Search",
+    "specField": "`ADM-BIZ-03` (`tests/03-operations/businesses.spec.ts:43`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "BIZ-EDG-01",
+    "module": "Operations",
+    "cat": "Edge Case",
+    "specField": "`ADM-BIZ-04` (`tests/03-operations/businesses.spec.ts:61`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "BIZ-EDG-02",
+    "module": "Operations",
+    "cat": "Edge Case",
+    "specField": "`ADM-BIZ-05` (`tests/03-operations/businesses.spec.ts:72`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "BIZ-NEG-01",
+    "module": "Operations",
+    "cat": "Negative / Defect",
+    "specField": "`ADM-BIZ-06` (`tests/03-operations/businesses.spec.ts:88`)",
+    "status": "Expected Fail (XFAIL)"
+  },
+  {
+    "reqId": "APP-FN-01",
+    "module": "Operations",
+    "cat": "Functional",
+    "specField": "`ADM-APP-01` (`tests/03-operations/suspension-appeals.spec.ts:4`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "APP-WF-01",
+    "module": "Operations",
+    "cat": "Workflow / Mutation",
+    "specField": "*Blocked*",
+    "status": "Blocked ⚠️"
+  },
+  {
+    "reqId": "CLI-FN-01",
+    "module": "Operations",
+    "cat": "Functional",
+    "specField": "`ADM-CLI-01` (`tests/03-operations/clients.spec.ts:4`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "CLI-FN-02",
+    "module": "Operations",
+    "cat": "Functional / Search",
+    "specField": "`ADM-CLI-02` (`tests/03-operations/clients.spec.ts:25`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "KYC-FN-01",
+    "module": "Operations",
+    "cat": "Functional",
+    "specField": "`ADM-KYC-01` (`tests/03-operations/kyc.spec.ts:5`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "KYC-FN-02",
+    "module": "Operations",
+    "cat": "Functional",
+    "specField": "`ADM-KYC-02` (`tests/03-operations/kyc.spec.ts:25`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "KYC-FN-03",
+    "module": "Operations",
+    "cat": "Functional / Search",
+    "specField": "`ADM-KYC-03` (`tests/03-operations/kyc.spec.ts:54`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "KYC-WF-01",
+    "module": "Operations",
+    "cat": "Workflow / Mutation",
+    "specField": "*Blocked*",
+    "status": "Blocked ⚠️"
+  },
+  {
+    "reqId": "REV-FN-01",
+    "module": "Operations",
+    "cat": "Functional",
+    "specField": "`ADM-REV-01` (`tests/03-operations/review-moderation.spec.ts:4`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "REV-WF-01",
+    "module": "Operations",
+    "cat": "Workflow / Mutation",
+    "specField": "*Blocked*",
+    "status": "Blocked ⚠️"
+  },
+  {
+    "reqId": "WTH-FN-01",
+    "module": "Operations",
+    "cat": "Functional",
+    "specField": "`ADM-WTH-01` (`tests/03-operations/withdrawals.spec.ts:4`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "WTH-FN-02",
+    "module": "Operations",
+    "cat": "Functional",
+    "specField": "`ADM-WTH-02` (`tests/03-operations/withdrawals.spec.ts:24`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "WTH-WF-01",
+    "module": "Operations",
+    "cat": "Workflow / Financial",
+    "specField": "*Blocked*",
+    "status": "Blocked ⚠️"
+  },
+  {
+    "reqId": "FRD-FN-01",
+    "module": "Risk",
+    "cat": "Functional",
+    "specField": "`ADM-FRD-01` (`tests/04-risk/fraud.spec.ts:5`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "FRD-FN-02",
+    "module": "Risk",
+    "cat": "Functional",
+    "specField": "`ADM-FRD-02` (`tests/04-risk/fraud.spec.ts:25`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "FRD-FN-03",
+    "module": "Risk",
+    "cat": "Functional",
+    "specField": "`ADM-FRD-03` (`tests/04-risk/fraud.spec.ts:45`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "FRD-WF-01",
+    "module": "Risk",
+    "cat": "Workflow / Mutation",
+    "specField": "*Blocked*",
+    "status": "Blocked ⚠️"
+  },
+  {
+    "reqId": "AUD-FN-01",
+    "module": "System",
+    "cat": "Functional",
+    "specField": "`ADM-AUD-01` (`tests/05-system/audit.spec.ts:5`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "AUD-FN-02",
+    "module": "System",
+    "cat": "Functional",
+    "specField": "`ADM-AUD-02` (`tests/05-system/audit.spec.ts:25`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "AUD-FN-03",
+    "module": "System",
+    "cat": "Functional / Search",
+    "specField": "`ADM-AUD-03` (`tests/05-system/audit.spec.ts:42`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "AUD-FN-04",
+    "module": "System",
+    "cat": "Functional / Boundary",
+    "specField": "`ADM-AUD-04` (`tests/05-system/audit.spec.ts:59`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "RULE-FN-01",
+    "module": "System",
+    "cat": "Functional",
+    "specField": "`ADM-RULE-01` (`tests/05-system/booking-rules.spec.ts:4`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "RULE-WF-01",
+    "module": "System",
+    "cat": "Workflow / Mutation",
+    "specField": "*Blocked*",
+    "status": "Blocked ⚠️"
+  },
+  {
+    "reqId": "CAT-FN-01",
+    "module": "System",
+    "cat": "Functional",
+    "specField": "`ADM-CAT-01` (`tests/05-system/catalog.spec.ts:4`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "CAT-WF-01",
+    "module": "System",
+    "cat": "Workflow / Mutation",
+    "specField": "*Blocked*",
+    "status": "Blocked ⚠️"
+  },
+  {
+    "reqId": "NOTIF-FN-01",
+    "module": "System",
+    "cat": "Functional",
+    "specField": "`ADM-NOTIF-01` (`tests/05-system/notifications.spec.ts:5`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "NOTIF-FN-02",
+    "module": "System",
+    "cat": "Functional",
+    "specField": "`ADM-NOTIF-02` (`tests/05-system/notifications.spec.ts:15`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "NOTIF-BND-01",
+    "module": "System",
+    "cat": "Boundary",
+    "specField": "`ADM-NOTIF-03` (`tests/05-system/notifications.spec.ts:29`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "NOTIF-WF-01",
+    "module": "System",
+    "cat": "Workflow / Mutation",
+    "specField": "*Blocked*",
+    "status": "Blocked ⚠️"
+  },
+  {
+    "reqId": "BNK-FN-01",
+    "module": "System",
+    "cat": "Functional",
+    "specField": "`ADM-BNK-01` (`tests/05-system/payout-banks.spec.ts:4`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "FEE-FN-01",
+    "module": "System",
+    "cat": "Functional",
+    "specField": "`ADM-FEE-01` (`tests/05-system/platform-fees.spec.ts:5`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "FEE-WF-01",
+    "module": "System",
+    "cat": "Workflow / Mutation",
+    "specField": "*Blocked*",
+    "status": "Blocked ⚠️"
+  },
+  {
+    "reqId": "TRM-FN-01",
+    "module": "System",
+    "cat": "Functional",
+    "specField": "`ADM-TRM-01` (`tests/05-system/terms.spec.ts:4`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "TRM-WF-01",
+    "module": "System",
+    "cat": "Workflow / Mutation",
+    "specField": "*Blocked*",
+    "status": "Blocked ⚠️"
+  },
+  {
+    "reqId": "USR-FN-01",
+    "module": "System",
+    "cat": "Functional",
+    "specField": "`ADM-USR-01` (`tests/05-system/users.spec.ts:4`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "USR-FN-02",
+    "module": "System",
+    "cat": "Functional / Search",
+    "specField": "`ADM-USR-02` (`tests/05-system/users.spec.ts:24`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "INT-01",
+    "module": "Integration",
+    "cat": "Consistency",
+    "specField": "`INT-01` (`tests/06-integration/cross-module-consistency.spec.ts:4`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "INT-02",
+    "module": "Integration",
+    "cat": "Calculation",
+    "specField": "`INT-02` (`tests/06-integration/cross-module-consistency.spec.ts:50`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "INT-03",
+    "module": "Integration",
+    "cat": "Consistency",
+    "specField": "`INT-03` (`tests/06-integration/cross-module-consistency.spec.ts:76`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "INT-04",
+    "module": "Integration",
+    "cat": "Consistency",
+    "specField": "`INT-04` (`tests/06-integration/cross-module-consistency.spec.ts:96`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "A11Y-01",
+    "module": "Accessibility",
+    "cat": "Standard",
+    "specField": "`A11Y-01` (`tests/08-accessibility/accessibility-wcag.spec.ts:5`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "A11Y-02",
+    "module": "Accessibility",
+    "cat": "Standard",
+    "specField": "`A11Y-02` (`tests/08-accessibility/accessibility-wcag.spec.ts:19`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "A11Y-03",
+    "module": "Accessibility",
+    "cat": "Standard",
+    "specField": "`A11Y-03` (`tests/08-accessibility/accessibility-wcag.spec.ts:40`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "UI-01",
+    "module": "UI/UX",
+    "cat": "Responsive",
+    "specField": "`UI-01` (`tests/09-ui-ux-responsive/responsive-and-ui.spec.ts:4`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "UI-02",
+    "module": "UI/UX",
+    "cat": "Layout",
+    "specField": "`UI-02` (`tests/09-ui-ux-responsive/responsive-and-ui.spec.ts:22`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "UI-03",
+    "module": "UI/UX",
+    "cat": "Consistency",
+    "specField": "`UI-03` (`tests/09-ui-ux-responsive/responsive-and-ui.spec.ts:35`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "PERF-01",
+    "module": "Performance",
+    "cat": "Latency",
+    "specField": "`PERF-01` (`tests/10-performance/performance-benchmarks.spec.ts:4`)",
+    "status": "Passed"
+  },
+  {
+    "reqId": "PERF-02",
+    "module": "Performance",
+    "cat": "Client Health",
+    "specField": "`PERF-02` (`tests/10-performance/performance-benchmarks.spec.ts:24`)",
+    "status": "Passed"
+  }
+]

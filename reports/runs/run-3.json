@@ -1,0 +1,2870 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\blen2\\OneDrive\\Documents\\Work\\Gizie QA Automation\\node_modules\\@playwright\\test\\cli.js",
+      "test"
+    ],
+    "configFile": "C:\\Users\\blen2\\OneDrive\\Documents\\Work\\Gizie QA Automation\\playwright.config.ts",
+    "rootDir": "C:/Users/blen2/OneDrive/Documents/Work/Gizie QA Automation/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/blen2/OneDrive/Documents/Work/Gizie QA Automation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "public-auth",
+        "name": "public-auth",
+        "testDir": "C:/Users/blen2/OneDrive/Documents/Work/Gizie QA Automation/tests/01-auth",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/blen2/OneDrive/Documents/Work/Gizie QA Automation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "admin-authenticated",
+        "name": "admin-authenticated",
+        "testDir": "C:/Users/blen2/OneDrive/Documents/Work/Gizie QA Automation/tests",
+        "testIgnore": [
+          "**/01-auth/**"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\blen2\\OneDrive\\Documents\\Work\\Gizie QA Automation\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "public-auth",
+        "testDir": "C:\\Users\\blen2\\OneDrive\\Documents\\Work\\Gizie QA Automation\\tests\\01-auth",
+        "snapshotDir": "C:\\Users\\blen2\\OneDrive\\Documents\\Work\\Gizie QA Automation\\tests\\01-auth",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "https://admin.gizie.et",
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "ignoreHTTPSErrors": true,
+          "channel": "chrome",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "public-auth"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\blen2\\OneDrive\\Documents\\Work\\Gizie QA Automation\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "admin-authenticated",
+        "testDir": "C:\\Users\\blen2\\OneDrive\\Documents\\Work\\Gizie QA Automation\\tests",
+        "snapshotDir": "C:\\Users\\blen2\\OneDrive\\Documents\\Work\\Gizie QA Automation\\tests",
+        "testIgnore": [
+          "**/01-auth/**"
+        ],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "https://admin.gizie.et",
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "ignoreHTTPSErrors": true,
+          "channel": "chrome",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium",
+          "storageState": "C:\\Users\\blen2\\OneDrive\\Documents\\Work\\Gizie QA Automation\\.auth\\admin.json"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "admin-authenticated"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "open": "never",
+          "outputFolder": "playwright-report"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "01-auth\\auth.spec.ts",
+      "file": "01-auth/auth.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Admin Authentication & Route Security (Unauthenticated)",
+          "file": "01-auth/auth.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "ADM-AUTH-01: Login page loads with all essential elements",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "public-auth",
+                  "projectName": "public-auth",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1991,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:17:22.751Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d748ac400d08b85935ef-66f429ec66e1baac7bc1",
+              "file": "01-auth/auth.spec.ts",
+              "line": 5,
+              "column": 7
+            },
+            {
+              "title": "ADM-AUTH-02: Submitting empty login form displays validation errors without network requests",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "public-auth",
+                  "projectName": "public-auth",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1895,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:17:26.831Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d748ac400d08b85935ef-8149069338beefe499ca",
+              "file": "01-auth/auth.spec.ts",
+              "line": 18,
+              "column": 7
+            },
+            {
+              "title": "ADM-AUTH-03: Submitting invalid email formats displays format validation error",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "public-auth",
+                  "projectName": "public-auth",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2383,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:17:28.748Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d748ac400d08b85935ef-ecacf7849d499909b3a8",
+              "file": "01-auth/auth.spec.ts",
+              "line": 36,
+              "column": 7
+            },
+            {
+              "title": "ADM-AUTH-04: Forgot password flow navigation and validation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "public-auth",
+                  "projectName": "public-auth",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2004,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:17:31.154Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d748ac400d08b85935ef-9d03de2a3bb605f6da59",
+              "file": "01-auth/auth.spec.ts",
+              "line": 48,
+              "column": 7
+            },
+            {
+              "title": "ADM-AUTH-05: Protected routes redirect to login when unauthenticated",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "public-auth",
+                  "projectName": "public-auth",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5527,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:17:33.197Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d748ac400d08b85935ef-92f791d865887d4aa50f",
+              "file": "01-auth/auth.spec.ts",
+              "line": 69,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "02-overview\\dashboard.spec.ts",
+      "file": "02-overview/dashboard.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Admin Module: Dashboard (Overview)",
+          "file": "02-overview/dashboard.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "ADM-DASH-01: Authenticated session loads Dashboard with global sidebar navigation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2517,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:17:40.704Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3de6d1b9eff72766aab5-6e634a085f61c4b6f55d",
+              "file": "02-overview/dashboard.spec.ts",
+              "line": 5,
+              "column": 7
+            },
+            {
+              "title": "ADM-DASH-02: Key metric cards display valid structure and data",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2201,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:17:44.432Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3de6d1b9eff72766aab5-10ff141db740b9908d7c",
+              "file": "02-overview/dashboard.spec.ts",
+              "line": 14,
+              "column": 7
+            },
+            {
+              "title": "ADM-DASH-03: Action queues (Requires attention & Needs Action popover) display properly",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1886,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:17:46.673Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3de6d1b9eff72766aab5-14fb5f59a548e5ee15b3",
+              "file": "02-overview/dashboard.spec.ts",
+              "line": 26,
+              "column": 7
+            },
+            {
+              "title": "ADM-DASH-04: Time period filters switch active state cleanly",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3266,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:17:48.582Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3de6d1b9eff72766aab5-27ad2b5e7b3aa8cf5c79",
+              "file": "02-overview/dashboard.spec.ts",
+              "line": 42,
+              "column": 7
+            },
+            {
+              "title": "ADM-DASH-05: Chart sections (Revenue overview and Booking outcomes) are rendered",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1640,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:17:51.873Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3de6d1b9eff72766aab5-7f72c5d9e53429056dda",
+              "file": "02-overview/dashboard.spec.ts",
+              "line": 56,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "03-operations\\account-deletions.spec.ts",
+      "file": "03-operations/account-deletions.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Admin Module: Account Deletions (Operations)",
+          "file": "03-operations/account-deletions.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "ADM-DEL-01: Account deletions page loads with decision tabs and search",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1506,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:17:53.552Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e15cf9c813a7f15a67ca-70f5955fd2a8ac49441b",
+              "file": "03-operations/account-deletions.spec.ts",
+              "line": 4,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "03-operations\\bookings.spec.ts",
+      "file": "03-operations/bookings.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Admin Module: Bookings (Operations)",
+          "file": "03-operations/bookings.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "ADM-BKG-01: Bookings table loads with expected columns and active records",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2434,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:17:55.106Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "757feb124f5475b0a998-55dd218dc5eb15b1bbbf",
+              "file": "03-operations/bookings.spec.ts",
+              "line": 5,
+              "column": 7
+            },
+            {
+              "title": "ADM-BKG-02: Lifecycle status tabs switch booking views",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3211,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:17:57.570Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "757feb124f5475b0a998-3d2d1dc804a192e510aa",
+              "file": "03-operations/bookings.spec.ts",
+              "line": 27,
+              "column": 7
+            },
+            {
+              "title": "ADM-BKG-03: Search query filters bookings by booking code or customer",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4940,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:18:00.804Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "757feb124f5475b0a998-4fb4a3d715edddbbc21a",
+              "file": "03-operations/bookings.spec.ts",
+              "line": 47,
+              "column": 7
+            },
+            {
+              "title": "ADM-BKG-04: Pagination exists and displays current page information",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6769,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:18:05.770Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "757feb124f5475b0a998-8d2b8fab6799f1397f13",
+              "file": "03-operations/bookings.spec.ts",
+              "line": 64,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "03-operations\\branch-kyc.spec.ts",
+      "file": "03-operations/branch-kyc.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Admin Module: Branch KYC (Operations)",
+          "file": "03-operations/branch-kyc.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "ADM-BKYC-01: Branch KYC table loads with verification statuses and controls",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2640,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:18:12.594Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c797ab0d130d3a43c721-2287914171b6d4ac8540",
+              "file": "03-operations/branch-kyc.spec.ts",
+              "line": 4,
+              "column": 7
+            },
+            {
+              "title": "ADM-BKYC-02: Branch KYC filter tabs switch views",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4182,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:18:15.257Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c797ab0d130d3a43c721-7a15b86a824017c748ca",
+              "file": "03-operations/branch-kyc.spec.ts",
+              "line": 25,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "03-operations\\businesses.spec.ts",
+      "file": "03-operations/businesses.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Admin Module: Businesses (Operations)",
+          "file": "03-operations/businesses.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "ADM-BIZ-01: Businesses table loads with expected columns and controls",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3363,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:18:19.491Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bb7199123f99634a7eca-deef96ef1eb38272c763",
+              "file": "03-operations/businesses.spec.ts",
+              "line": 5,
+              "column": 7
+            },
+            {
+              "title": "ADM-BIZ-02: Status tabs filter the businesses list",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3814,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:18:22.889Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bb7199123f99634a7eca-9d66365a01010ad43450",
+              "file": "03-operations/businesses.spec.ts",
+              "line": 26,
+              "column": 7
+            },
+            {
+              "title": "ADM-BIZ-03: Search filters businesses dynamically and clearing restores list",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5242,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:18:26.727Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bb7199123f99634a7eca-7ccce665083e577f966d",
+              "file": "03-operations/businesses.spec.ts",
+              "line": 43,
+              "column": 7
+            },
+            {
+              "title": "ADM-BIZ-04: Non-existent search query returns 0 rows or empty message gracefully",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2616,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:18:31.992Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bb7199123f99634a7eca-6fc30b4e9dae58be6269",
+              "file": "03-operations/businesses.spec.ts",
+              "line": 61,
+              "column": 7
+            },
+            {
+              "title": "ADM-BIZ-05: Special characters in search do not trigger application crash",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7674,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:18:34.634Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bb7199123f99634a7eca-844d49dd3e2155f132ee",
+              "file": "03-operations/businesses.spec.ts",
+              "line": 72,
+              "column": 7
+            },
+            {
+              "title": "ADM-BIZ-06 [DEFECT-CHECK]: Searching HTML script tag in search box handles server response",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "fail",
+                      "description": "BUG-GZ-001: Backend drops connection on <script> query with \"Cannot reach the server\"",
+                      "location": {
+                        "file": "C:\\Users\\blen2\\OneDrive\\Documents\\Work\\Gizie QA Automation\\tests\\03-operations\\businesses.spec.ts",
+                        "line": 99,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "expectedStatus": "failed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 8259,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).not.\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('text=Cannot reach the server')\nExpected: not visible\nReceived: visible\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"not toBeVisible\" locator('text=Cannot reach the server') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Cannot reach the server')\u001b[22m\n\u001b[2m    14 × locator resolved to <span class=\"flex-1 font-medium text-ink\">Cannot reach the server. Check your connection an…</span>\u001b[22m\n\u001b[2m       - unexpected value \"visible\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).not.\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('text=Cannot reach the server')\nExpected: not visible\nReceived: visible\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"not toBeVisible\" locator('text=Cannot reach the server') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Cannot reach the server')\u001b[22m\n\u001b[2m    14 × locator resolved to <span class=\"flex-1 font-medium text-ink\">Cannot reach the server. Check your connection an…</span>\u001b[22m\n\u001b[2m       - unexpected value \"visible\"\u001b[22m\n\n    at C:\\Users\\blen2\\OneDrive\\Documents\\Work\\Gizie QA Automation\\tests\\03-operations\\businesses.spec.ts:100:34",
+                        "location": {
+                          "file": "C:\\Users\\blen2\\OneDrive\\Documents\\Work\\Gizie QA Automation\\tests\\03-operations\\businesses.spec.ts",
+                          "column": 34,
+                          "line": 100
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  98 |\u001b[39m     \u001b[36mconst\u001b[39m isErrorShown \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m alertError\u001b[33m.\u001b[39misVisible()\u001b[33m;\u001b[39m\n \u001b[90m  99 |\u001b[39m     test\u001b[33m.\u001b[39mfail(isErrorShown\u001b[33m,\u001b[39m \u001b[32m'BUG-GZ-001: Backend drops connection on <script> query with \"Cannot reach the server\"'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 100 |\u001b[39m     \u001b[36mawait\u001b[39m expect(alertError)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 101 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 102 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 103 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\blen2\\OneDrive\\Documents\\Work\\Gizie QA Automation\\tests\\03-operations\\businesses.spec.ts",
+                            "column": 34,
+                            "line": 100
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).not.\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('text=Cannot reach the server')\nExpected: not visible\nReceived: visible\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"not toBeVisible\" locator('text=Cannot reach the server') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Cannot reach the server')\u001b[22m\n\u001b[2m    14 × locator resolved to <span class=\"flex-1 font-medium text-ink\">Cannot reach the server. Check your connection an…</span>\u001b[22m\n\u001b[2m       - unexpected value \"visible\"\u001b[22m\n\n\n   98 |     const isErrorShown = await alertError.isVisible();\n   99 |     test.fail(isErrorShown, 'BUG-GZ-001: Backend drops connection on <script> query with \"Cannot reach the server\"');\n> 100 |     await expect(alertError).not.toBeVisible();\n      |                                  ^\n  101 |   });\n  102 | });\n  103 |\n    at C:\\Users\\blen2\\OneDrive\\Documents\\Work\\Gizie QA Automation\\tests\\03-operations\\businesses.spec.ts:100:34"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:18:42.325Z",
+                      "annotations": [
+                        {
+                          "type": "fail",
+                          "description": "BUG-GZ-001: Backend drops connection on <script> query with \"Cannot reach the server\"",
+                          "location": {
+                            "file": "C:\\Users\\blen2\\OneDrive\\Documents\\Work\\Gizie QA Automation\\tests\\03-operations\\businesses.spec.ts",
+                            "line": 99,
+                            "column": 10
+                          }
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\blen2\\OneDrive\\Documents\\Work\\Gizie QA Automation\\test-results\\03-operations-businesses-A-223f2-box-handles-server-response-admin-authenticated\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\blen2\\OneDrive\\Documents\\Work\\Gizie QA Automation\\tests\\03-operations\\businesses.spec.ts",
+                        "column": 34,
+                        "line": 100
+                      }
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bb7199123f99634a7eca-d39e7c797a1b1a57e6af",
+              "file": "03-operations/businesses.spec.ts",
+              "line": 88,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "03-operations\\clients.spec.ts",
+      "file": "03-operations/clients.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Admin Module: Clients (Operations)",
+          "file": "03-operations/clients.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "ADM-CLI-01: Clients table loads with customer records and login method",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1781,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:18:51.358Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b068d091938e9ead118d-82cd310ff87293ecc969",
+              "file": "03-operations/clients.spec.ts",
+              "line": 4,
+              "column": 7
+            },
+            {
+              "title": "ADM-CLI-02: Search filters client records",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3737,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:18:53.158Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b068d091938e9ead118d-6273f5c6862162b2984c",
+              "file": "03-operations/clients.spec.ts",
+              "line": 25,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "03-operations\\kyc.spec.ts",
+      "file": "03-operations/kyc.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Admin Module: KYC / Verification (Operations)",
+          "file": "03-operations/kyc.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "ADM-KYC-01: KYC verification queue loads with expected columns and data",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4587,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:18:56.934Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "818de0a86368ce9f8c0b-1ae01ecd502122af371a",
+              "file": "03-operations/kyc.spec.ts",
+              "line": 5,
+              "column": 7
+            },
+            {
+              "title": "ADM-KYC-02: Status tabs filter the KYC queue",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3286,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:19:01.542Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "818de0a86368ce9f8c0b-2f760c4ea5ad726a62ae",
+              "file": "03-operations/kyc.spec.ts",
+              "line": 25,
+              "column": 7
+            },
+            {
+              "title": "ADM-KYC-03: Search filters KYC submissions dynamically",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2543,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:19:04.855Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "818de0a86368ce9f8c0b-d071d66228ae1c10e53c",
+              "file": "03-operations/kyc.spec.ts",
+              "line": 54,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "03-operations\\review-moderation.spec.ts",
+      "file": "03-operations/review-moderation.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Admin Module: Review Moderation (Operations)",
+          "file": "03-operations/review-moderation.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "ADM-REV-01: Review moderation page loads with status tabs",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2320,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:19:07.423Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "88f06ab1a3a981d2e27a-a353e97e153d2a1c40e0",
+              "file": "03-operations/review-moderation.spec.ts",
+              "line": 4,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "03-operations\\suspension-appeals.spec.ts",
+      "file": "03-operations/suspension-appeals.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Admin Module: Suspension Appeals (Operations)",
+          "file": "03-operations/suspension-appeals.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "ADM-APP-01: Suspension appeals queue loads with empty state / queue indicator",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3039,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:19:09.779Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e2dcffda4dcd385bb16c-4e3d0e87e374e1e2e8ea",
+              "file": "03-operations/suspension-appeals.spec.ts",
+              "line": 4,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "03-operations\\withdrawals.spec.ts",
+      "file": "03-operations/withdrawals.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Admin Module: Withdrawals (Operations)",
+          "file": "03-operations/withdrawals.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "ADM-WTH-01: Withdrawals page loads with filter tabs and request table",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1842,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:19:12.853Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7b94e2073de115dcd151-db2787104a857df3cad9",
+              "file": "03-operations/withdrawals.spec.ts",
+              "line": 4,
+              "column": 7
+            },
+            {
+              "title": "ADM-WTH-02: Withdrawal filter tabs switch active status view",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4667,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:19:14.728Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7b94e2073de115dcd151-936db0e39afe0608cba3",
+              "file": "03-operations/withdrawals.spec.ts",
+              "line": 24,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "04-risk\\fraud.spec.ts",
+      "file": "04-risk/fraud.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Admin Module: Fraud Alerts (Risk)",
+          "file": "04-risk/fraud.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "ADM-FRD-01: Fraud alerts table loads with rules, severity, and status",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1732,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:19:19.439Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "03ce92d581617d3ed9fa-c25984980009393b1736",
+              "file": "04-risk/fraud.spec.ts",
+              "line": 5,
+              "column": 7
+            },
+            {
+              "title": "ADM-FRD-02: Status tabs switch between alert resolution states",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3206,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:19:21.195Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "03ce92d581617d3ed9fa-3f7058a6adf8013bf391",
+              "file": "04-risk/fraud.spec.ts",
+              "line": 25,
+              "column": 7
+            },
+            {
+              "title": "ADM-FRD-03: Filter by severity dropdown functions properly",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3005,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:19:24.434Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "03ce92d581617d3ed9fa-eabd21ee673e331435d7",
+              "file": "04-risk/fraud.spec.ts",
+              "line": 45,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "05-system\\audit.spec.ts",
+      "file": "05-system/audit.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Admin Module: Audit Log (System)",
+          "file": "05-system/audit.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "ADM-AUD-01: Audit log loads with records, timestamps, and details",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2340,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:19:27.501Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "23a83f5c2e9fdcd83005-f2c51f4efa2ece87432a",
+              "file": "05-system/audit.spec.ts",
+              "line": 5,
+              "column": 7
+            },
+            {
+              "title": "ADM-AUD-02: Category dropdown filters audit events",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4496,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:19:29.917Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "23a83f5c2e9fdcd83005-83b5950df459473b494c",
+              "file": "05-system/audit.spec.ts",
+              "line": 25,
+              "column": 7
+            },
+            {
+              "title": "ADM-AUD-03: Action search input filters audit log records",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3316,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:19:34.467Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "23a83f5c2e9fdcd83005-8c802abc5a3c7ec2f04c",
+              "file": "05-system/audit.spec.ts",
+              "line": 42,
+              "column": 7
+            },
+            {
+              "title": "ADM-AUD-04: Pagination navigation cycles pages and updates page indicator",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3642,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:19:37.811Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "23a83f5c2e9fdcd83005-11466eeefba29b909f88",
+              "file": "05-system/audit.spec.ts",
+              "line": 59,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "05-system\\booking-rules.spec.ts",
+      "file": "05-system/booking-rules.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Admin Module: Booking Rules (System)",
+          "file": "05-system/booking-rules.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "ADM-RULE-01: Booking rules page displays cutoff window and active cancellation policy",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1847,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:19:41.507Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "87a0613bf0170cdcc11c-a5c619258ed62ef51857",
+              "file": "05-system/booking-rules.spec.ts",
+              "line": 4,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "05-system\\catalog.spec.ts",
+      "file": "05-system/catalog.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Admin Module: Catalog (System)",
+          "file": "05-system/catalog.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "ADM-CAT-01: Catalog displays business types and categories tabs",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3193,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:19:43.434Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d1f40a4d476db718dd9d-ab69bc35ed37e056db31",
+              "file": "05-system/catalog.spec.ts",
+              "line": 4,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "05-system\\notifications.spec.ts",
+      "file": "05-system/notifications.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Admin Module: Notifications (System)",
+          "file": "05-system/notifications.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "ADM-NOTIF-01: Notifications page loads with Inbox and Send controls",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1863,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:19:46.686Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "451c7e709b134a97d1aa-0956448216f394ba2880",
+              "file": "05-system/notifications.spec.ts",
+              "line": 5,
+              "column": 7
+            },
+            {
+              "title": "ADM-NOTIF-02: Broadcast Announcement form opens with all fields",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1917,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:19:48.581Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "451c7e709b134a97d1aa-30717f9a3b5269a25868",
+              "file": "05-system/notifications.spec.ts",
+              "line": 15,
+              "column": 7
+            },
+            {
+              "title": "ADM-NOTIF-03: Character length boundaries on notification fields",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1839,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:19:50.547Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "451c7e709b134a97d1aa-4c3f661e0e235703f607",
+              "file": "05-system/notifications.spec.ts",
+              "line": 29,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "05-system\\payout-banks.spec.ts",
+      "file": "05-system/payout-banks.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Admin Module: Payout Banks (System)",
+          "file": "05-system/payout-banks.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "ADM-BNK-01: Payout banks page displays configured banks and wallets list",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1970,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:19:52.423Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "37a4dcf31fa630d907ee-151131dee5d68564a82d",
+              "file": "05-system/payout-banks.spec.ts",
+              "line": 4,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "05-system\\platform-fees.spec.ts",
+      "file": "05-system/platform-fees.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Admin Module: Platform Fees (System)",
+          "file": "05-system/platform-fees.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "ADM-FEE-01: Platform fee rates and mock 1,000 ETB calculation render accurately",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2737,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:19:54.439Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bead4ebe100a8fe6b585-5d5a6ed528165ff1bc3b",
+              "file": "05-system/platform-fees.spec.ts",
+              "line": 5,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "05-system\\terms.spec.ts",
+      "file": "05-system/terms.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Admin Module: Terms & Conditions (System)",
+          "file": "05-system/terms.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "ADM-TRM-01: Terms and conditions page displays published version and action controls",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1615,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:19:57.222Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4260a3ba5d2f28dc4a53-2a65384a9ec2ae9e5c9b",
+              "file": "05-system/terms.spec.ts",
+              "line": 4,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "05-system\\users.spec.ts",
+      "file": "05-system/users.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Admin Module: Users & Roles (System)",
+          "file": "05-system/users.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "ADM-USR-01: Users table loads with accounts, roles, and status indicators",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2473,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:19:58.890Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2d73a3f90174d5fb4fff-affb13b38755b03671a8",
+              "file": "05-system/users.spec.ts",
+              "line": 4,
+              "column": 7
+            },
+            {
+              "title": "ADM-USR-02: Search filters user accounts",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4186,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:20:01.394Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2d73a3f90174d5fb4fff-9704625b992f9b4ccdce",
+              "file": "05-system/users.spec.ts",
+              "line": 24,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "06-integration\\cross-module-consistency.spec.ts",
+      "file": "06-integration/cross-module-consistency.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Integration & Cross-Module Consistency",
+          "file": "06-integration/cross-module-consistency.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "INT-01: Needs Action popover badges match KYC and Withdrawal queue counts",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5423,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:20:05.641Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "39caa3cf14fc210392f9-3c225460a0bd8fd91482",
+              "file": "06-integration/cross-module-consistency.spec.ts",
+              "line": 4,
+              "column": 7
+            },
+            {
+              "title": "INT-02: Platform fee calculation model is mathematically consistent",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2384,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:20:11.107Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "39caa3cf14fc210392f9-e74591a24e28754267a1",
+              "file": "06-integration/cross-module-consistency.spec.ts",
+              "line": 50,
+              "column": 7
+            },
+            {
+              "title": "INT-03: Payout banks configured in System match supported withdrawal accounts",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2338,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:20:13.541Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "39caa3cf14fc210392f9-008d23624ab35ca0fffa",
+              "file": "06-integration/cross-module-consistency.spec.ts",
+              "line": 76,
+              "column": 7
+            },
+            {
+              "title": "INT-04: Catalog categories match Booking service categories",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2734,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:20:15.916Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "39caa3cf14fc210392f9-d9c45a2345aef768b882",
+              "file": "06-integration/cross-module-consistency.spec.ts",
+              "line": 96,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "07-security\\security-and-auth.spec.ts",
+      "file": "07-security/security-and-auth.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Security & Session Integrity",
+          "file": "07-security/security-and-auth.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "SEC-01: Admin accounts are protected from suspension and deletion",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1988,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:20:18.696Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "543997b251c7780100bb-9d004f26525e61ea0317",
+              "file": "07-security/security-and-auth.spec.ts",
+              "line": 4,
+              "column": 7
+            },
+            {
+              "title": "SEC-02: Authentication tokens in localStorage conform to valid JWT structure",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1922,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:20:20.724Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "543997b251c7780100bb-70a11421954bad22a7ea",
+              "file": "07-security/security-and-auth.spec.ts",
+              "line": 18,
+              "column": 7
+            },
+            {
+              "title": "SEC-03: Sign out confirmation modal protects against accidental session termination",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2033,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:20:22.683Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "543997b251c7780100bb-f92ce87a3597a782410b",
+              "file": "07-security/security-and-auth.spec.ts",
+              "line": 43,
+              "column": 7
+            },
+            {
+              "title": "SEC-04: XSS payloads in search inputs are sanitized and do not execute script",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2208,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:20:24.745Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "543997b251c7780100bb-0eeae318cef5ec7e5e8a",
+              "file": "07-security/security-and-auth.spec.ts",
+              "line": 68,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "08-accessibility\\accessibility-wcag.spec.ts",
+      "file": "08-accessibility/accessibility-wcag.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Accessibility & WCAG 2.2 Standards",
+          "file": "08-accessibility/accessibility-wcag.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "A11Y-01: Dashboard meets core accessibility standards",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 15520,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:20:27.194Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f84d40ab75d2f7b8b1d6-f5c0d5251276cffa64d4",
+              "file": "08-accessibility/accessibility-wcag.spec.ts",
+              "line": 5,
+              "column": 7
+            },
+            {
+              "title": "A11Y-02: Form controls and interactive buttons have accessible names",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5593,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:20:42.741Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f84d40ab75d2f7b8b1d6-a91a49d42bffc8440900",
+              "file": "08-accessibility/accessibility-wcag.spec.ts",
+              "line": 19,
+              "column": 7
+            },
+            {
+              "title": "A11Y-03: Keyboard navigation and focus order across top banner actions",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1890,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:20:48.351Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f84d40ab75d2f7b8b1d6-d894f117f7dc2aa85606",
+              "file": "08-accessibility/accessibility-wcag.spec.ts",
+              "line": 40,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "09-ui-ux-responsive\\responsive-and-ui.spec.ts",
+      "file": "09-ui-ux-responsive/responsive-and-ui.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "UI/UX & Responsive Layouts",
+          "file": "09-ui-ux-responsive/responsive-and-ui.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "UI-01: Responsive adaptivity across viewports (Desktop, Tablet, Mobile)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2682,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:20:50.285Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9cde50ab24efd6754feb-56d134d1636ce8e77fb8",
+              "file": "09-ui-ux-responsive/responsive-and-ui.spec.ts",
+              "line": 4,
+              "column": 7
+            },
+            {
+              "title": "UI-02: Sidebar collapse and expand functionality",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2561,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:20:52.995Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9cde50ab24efd6754feb-c28eb2933eb378554f1e",
+              "file": "09-ui-ux-responsive/responsive-and-ui.spec.ts",
+              "line": 22,
+              "column": 7
+            },
+            {
+              "title": "UI-03: Empty state UI consistency across inactive queues",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2592,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:20:55.580Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9cde50ab24efd6754feb-af574c7a555c4583ea25",
+              "file": "09-ui-ux-responsive/responsive-and-ui.spec.ts",
+              "line": 35,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "10-performance\\performance-benchmarks.spec.ts",
+      "file": "10-performance/performance-benchmarks.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Performance & Client Health Telemetry",
+          "file": "10-performance/performance-benchmarks.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "PERF-01: Key administrative module navigation completes within acceptable threshold (< 3000ms)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3618,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:20:58.207Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "01d946298185e7febeb6-b3a57cf7bd55539966b0",
+              "file": "10-performance/performance-benchmarks.spec.ts",
+              "line": 4,
+              "column": 7
+            },
+            {
+              "title": "PERF-02: Client-side console health check confirms zero unhandled JavaScript runtime exceptions",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "admin-authenticated",
+                  "projectName": "admin-authenticated",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3640,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-16T10:21:01.850Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "01d946298185e7febeb6-d5cabc508efa6b522e85",
+              "file": "10-performance/performance-benchmarks.spec.ts",
+              "line": 24,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-16T10:17:21.761Z",
+    "duration": 227259.73799999998,
+    "expected": 65,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

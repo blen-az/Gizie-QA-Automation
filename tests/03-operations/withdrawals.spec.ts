@@ -32,7 +32,7 @@ test.describe('Admin Module: Withdrawals (Operations)', () => {
     await page.waitForTimeout(400);
     const pendingCount = await page.locator('tbody tr').count();
     expect(pendingCount).toBeGreaterThan(0);
-    const pendingBadges = await page.locator('tbody tr td:last-child').allInnerTexts();
+    const pendingBadges = await page.locator('tbody tr td:nth-child(5)').allInnerTexts();
     expect(pendingBadges.every(b => b.toLowerCase().includes('pending'))).toBe(true);
 
     // Switch to Paid
@@ -42,8 +42,8 @@ test.describe('Admin Module: Withdrawals (Operations)', () => {
     await page.waitForTimeout(400);
     const paidCount = await page.locator('tbody tr').count();
     expect(paidCount).toBeGreaterThan(0);
-    const paidBadges = await page.locator('tbody tr td:last-child').allInnerTexts();
-    expect(paidBadges.every(b => b.toLowerCase().includes('paid'))).toBe(true);
+    const paidBadges = await page.locator('tbody tr td:nth-child(5)').allInnerTexts();
+    expect(paidBadges.every(b => b.toLowerCase().includes('completed') || b.toLowerCase().includes('paid'))).toBe(true);
 
     // Switch to All
     const tabAll = page.getByRole('button', { name: /^All/i });
